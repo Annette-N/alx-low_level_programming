@@ -2,7 +2,7 @@
 
 /**
  * rev_string - func that prints a string in reverse
- * @str: prints the string
+ * @s: prints the string
  */
 void rev_string(char *s)
 {

@@ -2,7 +2,8 @@
 
 /**
  * print_rev - func that prints a string in reverse
- * @str: prints the string
+ * @s: prints the string
+ * Return: Always 0
  */
 void print_rev(char *s)
 {
