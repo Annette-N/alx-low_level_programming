@@ -8,9 +8,5 @@
 
 void reset_to_98(int *n)
 {
-int n = 98;
-int *ip;
-ip = &var;
-putchar("Address of var variable: %x\n", &var  );
-return (0);
+*n = 98;
 }
