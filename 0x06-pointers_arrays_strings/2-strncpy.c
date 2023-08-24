@@ -1,22 +1,28 @@
 #include "main.h"
-
 /**
- * _strncpy - Copys a string from src to dest
- * @dest: The string to be appended to
- * @src: The string to be appended to dest
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
  *
- * Return: A pointer to the resulting string
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int i;
+	int j;
 
-for (i = 0; i < n; i++)
-if (src[i] == '\0')
-{
-dest[i] = src[i];
-break;
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[j] = src[j];
+		j++;
+	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+
+	return (dest);
 }
-putchar('\n');
-return (dest);
-}
+
