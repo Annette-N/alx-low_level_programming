@@ -2,6 +2,9 @@
 
 /**
  * *_memset - func fills first n bytes of memory pointed by s with the byte b
+ * @s: pointer
+ * @b: char
+ * @n: unsigned int
  * Return: a pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
